@@ -15,8 +15,8 @@ include("codigoC.php");
 $elTexto=$_POST['eltexto'];
 echo "<br><br><br>Texto Ingresado :$elTexto <br>";
 $cantidadDeLetras=strlen($elTexto);
-//echo "cantidad de letras $cantidadDeLetras<br>";
 echo "TEXTO CIFRADO: ";
+//usando git
 for($i=0;$i<strlen($elTexto);$i++)
 {
     $ascii=ord($elTexto[$i]);
@@ -26,7 +26,7 @@ for($i=0;$i<strlen($elTexto);$i++)
         case 32: 
         $cifrado=32;
         break;
-         //cifrar las letras X Y Z
+      //cifrar las letras X Y Z
         case 88: 
         case 89:
         case 90:
